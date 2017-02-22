@@ -1,0 +1,66 @@
+body {
+    background-color: #eee;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+main {
+    width: 514px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    padding: 15px 50px;
+}
+
+.block {
+    border-bottom: solid black 1px;
+    padding: 15px 0px;
+}
+
+.username {
+    text-align: center;
+}
+
+.photo {
+    text-align: center;
+}
+
+.block p {
+    margin-left: 15px;
+}
+
+.main-cv {
+    padding-top: 30px;
+}
+
+.footer-cv {
+    padding-bottom: 30px;
+    border-bottom: solid black 0px;
+}
+
+.contact-info p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-info .number-title,
+.contact-info .vk-title {
+    margin-top: 15px;
+}
+
+.contact-info .number {
+    margin-bottom: 30px;
+}
+
+.contact-info .vk {
+    margin-bottom: 15px;
+}
+
+.footer-cv p:first-child {
+    margin-bottom: 0px;
+}
+
+.footer-cv p:last-child {
+    margin-top: 0px;
+}
+
