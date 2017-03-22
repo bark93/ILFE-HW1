@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="style-hw3.css">
 	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style-hw3.css">
+	<link rel="stylesheet" type="text/css" href="response.css">
 </head>
 <body>
 	<header class="header">
@@ -36,24 +37,25 @@
 		</nav>
 	</header>
 	<div class="banner">
-		<img src="image/banner-1.png" alt="" class="banner__img banner__img-1">
-		<img src="image/banner-2.png" alt="" class="banner__img banner__img-2">
-		<img src="image/banner-3.png" alt="" class="banner__img banner__img-3">
+		<div class="banner__images">
+			<img src="image/banner-1.png" alt="" class="banner__img banner__img-1">
+			<img src="image/banner-2.png" alt="" class="banner__img banner__img-2">
+			<img src="image/banner-3.png" alt="" class="banner__img banner__img-3">
+		</div>
 		<div class="banner__info">
 			<div class="banner-container">
 				<div class="banner__title">Lorest Nesto Gravido Forum</div>
 				<div class="banner__text">Duis porta ultrices elit sed consequat. Suspendisse nunc orci, molestie sed mollis nec, facilisis at 	ligula. Donec ultrices varius lacinia. Pellentesque id tortor non justo consequat pulvinar. </div>
+				<button type="submit" class="banner__button banner__button_button">See More</button>
 			</div>
-			<form action="#">
-				<button type="submit" class="banner__button blue-button">See More</button>
-			</form>
 		</div>
 	</div>
 	<div class="subscription">
 		<div class="subscription__text">Duis porta ultrices elit sed consequat. Suspendisse nunc orci molestie sed.</div>
+		
 		<form class="subscription__email">
 			<input class="subscription__email" type="email" name="email" placeholder="Email">
-			<input class="subscription__submit blue-button" type="submit" name="submit" value="Submit">
+			<input class="subscription__submit subscription__submit_blue" type="submit" name="submit" value="Submit">
 		</form>
 	</div>
 	<div class="preview">
@@ -129,62 +131,62 @@
 			</section>
 		</div>
 	</div>
-	<footer class="short-info">
-		<div class="short-info__container">
-			<section class="short-info__item short-info__item-flex">
-				<div class="short-info__title">about us</div>
-				<img src="image/border.png" class="short-info__border">
-				<div class="short-info__text">
+	<footer class="footer">
+		<div class="footer__container">
+			<section class="footer__item footer__item-flex">
+				<div class="footer__title">about us</div>
+				<img src="image/border.png" class="footer__border">
+				<div class="footer__text">
 					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.</div>
-				<div class="short-info__text">
+				<div class="footer__text">
 					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
 				</div>
-				<button class="short-info__button blue-button">
+				<button class="footer__button footer__button_blue">
 					more
 				</button>
 			</section>
-			<section class="short-info__item">
-				<div class="short-info__title"> 
+			<section class="footer__item">
+				<div class="footer__title"> 
 					quick links
 				</div>
-				<img src="image/border.png" class="short-info__border">
-				<ul class="short-info__list">
-					<li class="short-info__list-item"> 
-						<a href="#" class="short-info__list-link">some menu link 1</a>
+				<img src="image/border.png" class="footer__border">
+				<ul class="footer__list">
+					<li class="footer__list-item"> 
+						<a href="#" class="footer__list-link">some menu link 1</a>
 					</li>
-					<li class="short-info__list-item"> 
-						<a href="#" class="short-info__list-link">some menu link 2</a>
+					<li class="footer__list-item"> 
+						<a href="#" class="footer__list-link">some menu link 2</a>
 					</li>
-					<li class="short-info__list-item"> 
-						<a href="#" class="short-info__list-link">some menu link 3</a>
+					<li class="footer__list-item"> 
+						<a href="#" class="footer__list-link">some menu link 3</a>
 					</li>
-					<li class="short-info__list-item"> 
-						<a href="#" class="short-info__list-link">some menu link 4</a>
+					<li class="footer__list-item"> 
+						<a href="#" class="footer__list-link">some menu link 4</a>
 					</li>
-					<li class="short-info__list-item"> 
-						<a href="#" class="short-info__list-link">some menu link 5</a>
+					<li class="footer__list-item"> 
+						<a href="#" class="footer__list-link">some menu link 5</a>
 					</li>
-					<li class="short-info__list-item"> 
-						<a href="#" class="short-info__list-link">some menu link 6</a>
+					<li class="footer__list-item"> 
+						<a href="#" class="footer__list-link">some menu link 6</a>
 					</li>
 				</ul>
 			</section>
-			<section class="short-info__item short-info__item-flex">
-				<div class="short-info__title">contact us</div>
-				<img src="image/border.png" class="short-info__border">
-				<form class="short-info__form">
-					<input type="text" class="short-info__input placeholder" placeholder="Name" name="user-name">
-					<input class="short-info__input placeholder" type="email" placeholder="Email" name="user-email">
-					<textarea class="short-info__input placeholder" placeholder="Your message" name="user-message"></textarea>
-					<button class="short-info__button blue-button">
+			<section class="footer__item footer__item-flex">
+				<div class="footer__title">contact us</div>
+				<img src="image/border.png" class="footer__border">
+				<form class="footer__form">
+					<input type="text" class="footer__input footer__input_placeholder" placeholder="Name" name="user-name">
+					<input class="footer__input footer__input_placeholder" type="email" placeholder="Email" name="user-email">
+					<textarea class="footer__input footer__input_placeholder" placeholder="Your message" name="user-message"></textarea>
+					<button class="footer__button footer__button_blue">
 						Submit
 					</button>
 				</form> 
 			</section>
 		</div>		
 	</footer>
-	<footer class="footer">
-		<div class="footer__text">© 2011 PSD Style All Rights Reserved</div>
-	</footer>
+	<div class="copyright">
+		<div class="copyright__content">© 2011 PSD Style All Rights Reserved</div>
+	</div>
 </body>
 </html>
