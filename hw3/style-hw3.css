@@ -2,10 +2,6 @@
 	box-sizing: border-box;
 }
 
-a {
-	text-decoration: none;
-}
-
 body {
 	background-color: #fff;
 	min-width: 460px;
@@ -13,7 +9,7 @@ body {
 
 .banner__button_button,
 .subscription__submit_blue,
-.footer__button_blue {
+.main-footer__button_blue {
 	background: linear-gradient(to top, #4290c1, #60a9d4);
 	cursor: pointer;
 	color: #fff;
@@ -21,10 +17,15 @@ body {
 	border-radius: 4px;
 }
 
+@font-face {
+    font-family: Dunkirk;
+    src: url(Dunkirk.otf);
+}
+
 /*------header-----*/
-.header {
+.main-header {
 	min-height: 70px;
-	padding: 0 10% 0 10%;
+	padding: 0 10%;
 	background: url(image/bcg.png) round;
 	display: flex;
 	justify-content: space-between;
@@ -120,7 +121,7 @@ body {
 }
 
 .banner__info {
-	padding: 75px 0 25px 0;
+	padding: 75px 0 25px;
 	margin-left: auto;
 	width: 30%; 
 	height: 370px;
@@ -138,7 +139,7 @@ body {
 .banner__title {
 	text-transform: capitalize;
 	color: #fff;
-	font: bold 26px Droid sans, sans-serif;
+	font: bold 26px "Droid sans", sans-serif;
 	text-shadow: -1px 1px 2px #000;
 }
 
@@ -150,7 +151,7 @@ body {
 .banner__button {
 	width: 190px;
 	height: 55px;
-	font: 28px/17px Droid sans, sans-serif;
+	font: 28px/17px "Droid sans", sans-serif;
 	margin: 0 auto;
 }
 
@@ -194,7 +195,7 @@ body {
 	padding: 0 10px;
 	background: linear-gradient(to top, #d2d2d2, #e8e7e5);
 	border-radius: 4px;
-	height: 70px;
+	min-height: 70px;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -237,7 +238,7 @@ body {
 .subscription__submit {
 	width: 62px;
 	height: 42px;
-	font: 14px/26px Droid sans, sans-serif;
+	font: 14px/26px "Droid sans", sans-serif;
 }
 
 /*--------preview---------*/ 
@@ -259,12 +260,10 @@ body {
 	margin-right: 70px;
 }
 
-.preview__item-flex {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 200px;
+.preview__item-top {
+	min-height: 250px;
 	margin-bottom: 65px;
+	position: relative;
 }
 
 .preview__item:nth-child(3n) {
@@ -286,13 +285,14 @@ body {
 }
 
 .preview__button {
+	position: absolute;
+	bottom: 0;
 	width: 35%;
-	
 	height: 35px;
 	background: linear-gradient(to top, #e3e3e3, #fefefe);
 	cursor: pointer;
 	color: #000;
-	font: 16px/20px Myriad Pro, sans-serif;
+	font: 16px/20px "Myriad Pro", sans-serif;
 	border: none;
 	border-radius: 4px;
 	box-shadow: 0 2px 5px -2px #000;
@@ -346,62 +346,57 @@ body {
   left:auto;
 	transform:rotate(-6deg);
 }
-/*----------------footer-------------------*/ 
-.footer {
+/*----------------main-footer-------------------*/ 
+.main-footer {
 	background: url(image/bcg-footer.png);
 	background-size: cover;
 	border-bottom: 2px solid #4e4949;
 }
-.footer__container {
+.main-footer__container {
 	width: 80%;
-	height: 350px;
+	min-height: 350px;
 	margin: 0 auto;
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 30px;
+	padding: 30px 0 40px;
 	margin-top: 30px;
 }
 
-.footer__item {
+.main-footer__item {
 	width: 28%;
 	min-width: 270px;
+	min-height: 305px;
 }
 
-.footer__item-flex {
-	height: 305px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.footer__title {
+.main-footer__title {
 	font: 24px/30px Arial, sans-serif;
 	text-transform: capitalize;
 }
 
-.footer__border {
-	margin-bottom: 25px;
+.main-footer__border {
+	margin: 5px 0 25px;
 }
 
-.footer__text {
+.main-footer__text {
 	font: 14px/20px Arial, sans-serif;
 	margin-bottom: 25px;
 }
 
-.footer__button {
+
+.main-footer__button {
 	text-transform: capitalize;
-	font: 16px/30px Droid sans, sans-serif;
+	font: 16px/30px "Droid sans", sans-serif;
 	width: 25%;
 	height: 40px;
 }
 
-.footer__list {
+.main-footer__list {
 	margin-left: 30px;
 	list-style-image: url(image/arrow.png)
 }
 
-.footer__list-link {
+.main-footer__list-link {
 	color: #fff;
 	font: 16px/30px Arial, sans-serif;
 	text-transform: capitalize;
@@ -410,7 +405,7 @@ body {
 	text-align: left;
 }
 
-.footer__input {
+.main-footer__input {
 	background-color: #101010;
 	border-radius: 25px;
 	color: #fff;
@@ -422,16 +417,16 @@ body {
 	font: 14px/20px Arial, sans-serif;
 }
 
-.footer__input_placeholder::-webkit-input-placeholder {
+.main-footer__input_placeholder::-webkit-input-placeholder {
 		color: #fff;
 }
-.footer__input_placeholder::-moz-placeholder {
+.main-footer__input_placeholder::-moz-placeholder {
 		color: #fff;
 }
-.footer__input_placeholder:-moz-placeholder {
+.main-footer__input_placeholder:-moz-placeholder {
 		color: #fff;
 }
-.footer__input_placeholder:-ms-input-placeholder {
+.main-footer__input_placeholder:-ms-input-placeholder {
 		color: #fff;
 }
 
