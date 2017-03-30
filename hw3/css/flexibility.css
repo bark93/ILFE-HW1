@@ -1,16 +1,19 @@
 @media only screen and (max-width: 1200px) {
-	.preview__item:nth-child(n) {
+	.preview__item {
 		margin: 0 0 20px 0;
+	}
+	.banner__images {
+	min-width: 580px;
 	}
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1060px) {
 	.main-nav {
 		width: 40%;
 		min-width: 415px;
 	}
 	.banner {
-		height: 610px;
+		height: 650px;
 		text-align: center;
 	}
 	.banner__images {
@@ -19,9 +22,7 @@
 	.banner__info {
 		padding: 70px 0 0 0;
 		width: 80%;
-	}
-	.banner-container {
-		height: 220px;
+		height: 48%;
 	}
 	.subscription {
 		height: 80px;
@@ -31,11 +32,15 @@
 }
 
 @media only screen and (max-width: 950px) {
+	.preview__center {
+		min-width: 80%;
+	}
+
 	.main-footer__container {
 		min-height: 700px;
 		flex-wrap: wrap;
 	}
-	.main-footer__item {
+	.main-footer-item {
 		margin-bottom: 30px;
 	}
 }
@@ -63,7 +68,7 @@
 	.subscription {
 	height: 110px;
 	}
-  	.main-nav__list {
+  .main-nav__list {
 	flex-wrap: wrap;
 	}
 	.preview__center {
@@ -80,13 +85,11 @@
 }
 @media only screen and (max-width: 620px) {
 	.banner__images {
-		height: 50%;
 		left: -30px;
 	}
 }
 
 @media only screen and (max-width: 530px) {
 	.banner__images {
-		height: 50%;
 		left: -50px;
 }
