@@ -1,0 +1,32 @@
+@keyframes appearance-first {
+    from {
+	opacity: 0;
+    }
+   	33% {
+  opacity: 1;
+   	}
+} 
+
+@keyframes appearance-second {
+    from {
+	opacity: 0;
+    }
+    33% {
+  opacity: 0;
+    }
+    66% {
+  opacity: 1;
+    }	
+}
+
+@keyframes appearance-third {
+    from {
+	opacity: 0;
+    }
+  66% {
+  opacity: 0;
+    }	
+    to {
+	opacity: 1;
+    }	
+}
